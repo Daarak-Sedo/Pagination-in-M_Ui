@@ -1,15 +1,9 @@
-import {
-  Box,
-  CssBaseline,
-  Typography,
-  Card,
-  CardContent,
-  Grid,
-  Container,
-} from "@material-ui/core";
+import {Box,CssBaseline,Typography,Card,CardContent,Grid,Container,} from "@material-ui/core";
 import Pagination from "@material-ui/lab/Pagination";
 import { useState, useEffect } from "react";
 import axios from "axios";
+
+
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -22,6 +16,8 @@ function App() {
     loadPosts();
   }, [page]);
 
+
+  
   return (
     <div className="App">
       <CssBaseline />
@@ -52,5 +48,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
